@@ -1,0 +1,85 @@
+﻿<UserControl x:Class="At_Barika_F.Inscription"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:At_Barika_F"
+             xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:uc="clr-namespace:At_Barika_F"
+             mc:Ignorable="d" 
+             d:DesignHeight="810" d:DesignWidth="970" >
+   
+    <Border Name="BrdGlobal" CornerRadius="0 20 20 0" Background="White">
+        <Grid  Name="GrdGlobal" Margin="0,10,7,10">
+
+            <!--Border Personel-->
+
+            <Border Name="BrdPersonel" CornerRadius="20"  Margin="10,0,0,463">
+
+                <!--Backround Border Personel-->
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF2198F2" />
+                        <GradientStop Color="#FF0565EB" Offset="1" />
+
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <!--Backround Border Personel-->
+
+                <!--Grid Personel-->
+
+                <Grid Name="GrdPersonel"  Margin="8,8,8,8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.7*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+
+
+                    <!--Backround Grid Personel-->
+
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF2198F2" />
+                            <GradientStop Color="#FF0565EB" Offset="1" />
+
+                        </LinearGradientBrush>
+                    </Grid.Background>
+
+                    <!--Backround Grid Personel-->
+
+                    <!--Content Grid Personel-->
+
+                    <materialDesign:PackIcon Kind="Person" Foreground="White" Height="48" Width="59"/>
+                    <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" TextAlignment="Center" Text="Personel Information" FontSize="22" Foreground="White" Margin="59,13,0,0" Height="46" Grid.RowSpan="2"/>
+                    
+
+
+                </Grid>
+
+                <!--Grid Personel-->
+
+            </Border>
+
+            <Border CornerRadius="20 20 20 20" BorderBrush="Black" BorderThickness="1,1,1,1" HorizontalAlignment="Left" Height="86" Margin="347,417,0,0" VerticalAlignment="Top" Width="292">
+                <Grid/>
+            </Border>
+            <!--Border Personel-->
+
+
+
+        </Grid>
+
+    </Border>
+</UserControl>

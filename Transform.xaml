@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="At_Barika_F.Transform"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:At_Barika_F"
+             xmlns:uc="clr-namespace:At_Barika_F"
+             mc:Ignorable="d" 
+             d:DesignHeight="810" d:DesignWidth="970" >
+    <Border CornerRadius="0 20 20 0" Background="White">
+        <Grid Margin="7,7,7,7">
+
+            <DataGrid  x:Name="MembresDataGrid" Width="auto" RowStyle="{DynamicResource DataGridRowStyle1}" Margin="2,250,2,2">
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="IDTransform" IsReadOnly="True" CanUserResize="False"/>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Border Width="25" Height="25" CornerRadius="50" Margin="0 0 10 0" Background="Blue">
+                                        <TextBlock Text="..." VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Margin="0 0 0 1"/>
+
+                                    </Border>
+                                    <TextBlock Text="..." VerticalAlignment="Center"/>
+
+                                </StackPanel>
+                                
+                            </DataTemplate>
+                            
+                        </DataGridTemplateColumn.CellTemplate>
+                        
+                        
+                    </DataGridTemplateColumn>
+
+                    <DataGridTextColumn Header="IDLine" IsReadOnly="True" CanUserResize="False" Width="*"/>
+                    <DataGridTextColumn Header="NumberLine" IsReadOnly="True" CanUserResize="False" Width="*"/>
+                    <DataGridTextColumn Header="Old Street" IsReadOnly="True" CanUserResize="False" Width="*"/>
+                    <DataGridTextColumn Header="New street" IsReadOnly="True" CanUserResize="False" Width="*"/>
+                    <DataGridTextColumn Header="IDClient" IsReadOnly="True" CanUserResize="False" Width="*"/>
+
+                </DataGrid.Columns>
+            </DataGrid>
+            
+            
+        </Grid>
+        
+        
+    </Border>
+</UserControl>

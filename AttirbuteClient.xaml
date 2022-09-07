@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="At_Barika_F.AttirbuteClient"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:At_Barika_F"
+             mc:Ignorable="d" Width="310" Height="80">
+    <Grid>
+        <TextBlock Height="40" Margin="6,20,214,20" Foreground="White" Text="Name" FontSize="20"/>
+        <TextBox Margin="83,10,10,10" Style="{DynamicResource TextBoxStyle1}" />
+    </Grid>
+</UserControl>
